@@ -1,5 +1,9 @@
 package Leetcode_1512;
 
+import java.util.HashMap;
+
+import javax.print.attribute.HashAttributeSet;
+
 public class GoodPairs {
 
     public static int numIdenticalPairsTwoPointers(int[] nums) {
@@ -21,7 +25,7 @@ public class GoodPairs {
         return goodPairs;
     }
 
-    public static int numIdenticalPairsFoorLoop(int[] nums) {
+    public static int numIdenticalPairsForLoop(int[] nums) {
         int goodPairs = 0;
 
         for (int i = 0; i < nums.length; ++i) {
@@ -34,7 +38,21 @@ public class GoodPairs {
         return goodPairs;
     }
 
+    public static int numIdenticalPairsMap(int[] nums) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int goodPairs = 0;
+        for (int i = 0; i < nums.length; ++i) {
+            if (!map.containsKey(nums[i])) {
+                map.put(nums[i], 1);
+            } else {
+                goodPairs += map.get(nums[i]); 
+                map.put(nums[i], map.get(nums[i]) + 1);
+            }
+        }
+        return goodPairs;
+    }
+
     public static void main (String[] args) {
-        System.out.println(numIdenticalPairsFoorLoop(new int [] { 1,2,3,1,1,3}));
+        System.out.println(numIdenticalPairsMap(new int [] { 1,2,3,1,1,3}));
     }
 }
