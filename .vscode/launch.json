@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ShuffleArray",
+            "request": "launch",
+            "mainClass": "Leetcode_1470.ShuffleArray",
+            "projectName": "leetcode_1989f5fc"
+        },
+        {
+            "type": "java",
+            "name": "LinkedList",
+            "request": "launch",
+            "mainClass": "Practice.LinkedList",
+            "projectName": "leetcode_1989f5fc"
+        },
+        {
+            "type": "java",
+            "name": "Practice",
+            "request": "launch",
+            "mainClass": "Practice.Practice",
+            "projectName": "leetcode_1989f5fc"
+        },
+        {
+            "type": "java",
+            "name": "Practice",
+            "request": "launch",
+            "mainClass": "Leetcode_1512.Practice.Practice",
+            "projectName": "leetcode_1989f5fc"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "TwoSum",
+            "request": "launch",
+            "mainClass": "Leetcode_01.TwoSum",
+            "projectName": "leetcode_1989f5fc"
+        },
+        {
+            "type": "java",
+            "name": "GoodPairs",
+            "request": "launch",
+            "mainClass": "Leetcode_1512.GoodPairs",
+            "projectName": "leetcode_1989f5fc"
+        },
+        {
+            "type": "java",
+            "name": "ConcatenationOfArray",
+            "request": "launch",
+            "mainClass": "Leetcode_1929.ConcatenationOfArray",
+            "projectName": "leetcode_1989f5fc"
+        }
+    ]
+}
